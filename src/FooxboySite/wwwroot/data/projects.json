@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "Title": "Music X",
+      "UrlPhotoBackground": "img/musicx-image.png",
+      "UrlPhotoIcon": "img/logo.png",
+      "Link": "/MusicX",
+      "Description": "Музыкальный плеер ВКонтакте для Windows 10" 
+    }
+  ]
+}

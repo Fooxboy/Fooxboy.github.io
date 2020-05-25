@@ -1,0 +1,29 @@
+﻿@page "/"
+@using FooxboySite.Models
+@using FooxboySite.Controls
+@using FooxboySite.Services
+@inject ProjectLoaderService _loader;
+
+<div class="header">
+    <a href="/" class="btn-header"> Главная</a>
+    <a href="/MusicX" class="btn-header"> Music X</a>
+</div>
+
+<h2>
+    Мои проекты
+</h2>
+
+@foreach (var project in Projects)
+{
+    <ProjectControl Model=@project/>
+}
+
+@code
+{
+    private List<ProjectModel> Projects = new List<ProjectModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Projects = await _loader.GetProjects();
+    }
+}

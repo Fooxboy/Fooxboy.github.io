@@ -1,0 +1,48 @@
+﻿@page "/MusicX"
+@using FooxboySite.Models
+@using FooxboySite.Services
+@inject ConfigLoaderService _loader;
+
+<div class="header">
+    <a href="/" class="btn-header"> Главная</a>
+    <a href="/MusicX" class="btn-header"> Music X</a>
+</div>
+
+<div style="margin: 50px 50px;">
+    <div class="info-block" style="float: left; margin-right: 20px; position: relative; height: 200px; width: 200px;">
+        <img class="info-icon" src="@_config.Icon"/>
+    </div>
+
+    <div class="info-block" style="vertical-align: top; width: auto; height: 200px; padding-top: 10px;">
+        <h2 style="margin-left: 20px; margin-top: 20px">@_config.Title</h2>
+        <p style="margin-left: 20px">@_config.Description</p>
+        <br />
+        <a href="https://vk.com/musicxplayer" target="_blank" class="info-btn">Группа ВКонтакте</a>
+        <a href="tg://resolve?domain=MusicXPlayer" style="margin-left: 10px;" class="info-btn">Канал Телеграм</a>
+    </div>
+</div>
+
+<div class="info-block" style="margin: 50px 50px; padding:15px;">
+    <h4>О приложении</h4>
+    <p>Music X - приложение для прослушивания музыки которое крутое очень мне лень придумывать описание</p>
+</div>
+
+<div class="info-block" style="margin: 50px 50px; padding:15px;">
+    <h4>Список версий</h4>
+
+    
+</div>
+
+
+@code {
+    private ConfigModel _config = new ConfigModel();
+    public List<VersionModel> Versions = new List<VersionModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _config = await _loader.GetConfig("data/musicx/config.json");
+
+        Versions = _config.Version;
+    }
+
+}

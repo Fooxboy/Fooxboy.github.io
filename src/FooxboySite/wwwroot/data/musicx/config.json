@@ -1,0 +1,49 @@
+{
+  "Title": "Music X",
+  "Description": "Музыкальный плеер ВКонтакте для windows 10",
+  "Icon": "img/logo.png",
+  "LastVersion": "2.0.40",
+  "ReleaseVersion": "1.6.41",
+  "Versions": [
+    {
+      "Version": "2.0.40",
+      "CodeName": "Beta 3",
+      "Description": "Карточки музыкантов, глобальный поиск, добавление/удаление треков и альбомов, треки и альбомы научились отображать информацию о всех исполнителях, исправлена кнопка повтора, обработка ошибок сети, Кнопка \"Вопроизвести\" при пкм по альбому теперь работает, добавлен экран загрузки рекомендаций",
+      "Url": "https://yadi.sk/d/tFy2wP7XU_xNUg",
+      "UrlDescription": {
+        "Telegram": "https://t.me/MusicXPlayer/53",
+        "Vkontakte": "https://vk.com/wall-183468791_42"
+      }
+    },
+    {
+      "Version": "2.0.38",
+      "CodeName": "Beta 2",
+      "Description": "Добавлены рекомендации, исправлены ошибки",
+      "Url": "https://yadi.sk/d/MYZWVdQA5eWasg",
+      "UrlDescription": {
+        "Telegram": "https://t.me/MusicXPlayer/47",
+        "Vkontakte": "https://vk.com/wall-183468791_36"
+      }
+    },
+    {
+      "Version": "2.0.35",
+      "CodeName": "Beta 1",
+      "Description": "Первая открытая бета версия.",
+      "Url": "https://yadi.sk/d/E962VWt1RCplgQ",
+      "UrlDescription": {
+        "Telegram": "https://t.me/MusicXPlayer/37",
+        "Vkontakte": "https://vk.com/wall-183468791_9"
+      }
+    },
+    {
+      "Version": "1.6.41",
+      "CodeName": "Store",
+      "Description": "Добавлена информация о Beta версии.",
+      "Url": "https://www.microsoft.com/ru-ru/p/music-x-player/9ncjgg7b13q1",
+      "UrlDescription": {
+        "Telegram": "https://t.me/MusicXPlayer/",
+        "Vkontakte": "https://vk.com/musicxplayer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+﻿@using FooxboySite.Models
+
+
+
+    <div style="background-image: url(@Model.UrlPhotoBackground);" class="project-block">
+        
+        <div class="project-info">
+            <img class="project-icon" src=@Model.UrlPhotoIcon />
+            <span class="project-title">  @Model.Title</span>
+            <p class="project-description">@Model.Description</p>
+            <a href="@Model.Link" class="project-btn"> Подробнее</a>
+        </div>
+    </div>
+
+
+@code {
+    [Parameter]
+    public ProjectModel Model { get; set; }
+}
